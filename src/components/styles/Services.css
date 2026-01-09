@@ -1,0 +1,80 @@
+.services {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #0f172a, #111827);
+  text-align: center;
+  color: white;
+}
+
+.services h2 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Card style */
+.service-card {
+      display: flex;          /* make children horizontal */
+  align-items: center;    /* vertically center icon and text */
+  gap: 1rem;     
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  border-color: #3b82f6; /* blue border on hover */
+}
+
+/* Icon container */
+.service-icon {
+      flex-shrink: 0;   
+  display: inline-flex;
+  background: rgba(59, 130, 246, 0.2); /* blue soft background */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: background 0.3s;
+}
+
+.service-card:hover .service-icon {
+  background: rgba(59, 130, 246, 0.4);
+}
+
+/* Icon size and color */
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #3b82f6;
+}
+
+/* Service title with hover line */
+.service-card h3 {
+  font-size: 1.25rem;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+.service-card:hover h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3b82f6;
+  border-radius: 1px;
+}

@@ -1,0 +1,73 @@
+.portfolio {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #111827, #0f172a);
+  color: white;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay span {
+  background: rgba(59,130,246,0.8);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.portfolio-overlay h3 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+/* Service name badge */
+.portfolio-category {
+  display: inline-block;
+  background: #3b82f6; /* blue background */
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
