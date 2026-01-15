@@ -1,6 +1,5 @@
 {
   "name": "plombier-website",
-  "homepage": "https://a7ndriyyy.github.io/Plombier",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
