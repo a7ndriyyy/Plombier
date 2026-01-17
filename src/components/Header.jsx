@@ -15,7 +15,7 @@ export default function Header() {
       <div className="header-content">
         <h1>Plombier Company</h1>
         <h2>Ivanchenko Vasyl</h2>
-        <p>Président</p>
+        <p>CEO</p>
 
         <div className="contact-info">
           <div className="contact-item">
