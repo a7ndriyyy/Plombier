@@ -13,11 +13,11 @@ function Partnership() {
   return (
     <section className="partnership">
       <div className="container">
-        <h2 className="windows-title">Notre Partneriat – Fenêtres</h2>
+        <h2 className="windows-title">Notre Partneriat – Fenêtres et Miroirs</h2>
         <p className="windows-description">
           Nous sommes fiers de notre partenariat avec les meilleurs fabricants de
-          fenêtres pour vous offrir des produits de qualité supérieure. Nos
-          fenêtres sont conçues pour allier esthétique, durabilité et
+          fenêtres et miroirs pour vous offrir des produits de qualité supérieure. Nos
+          fenêtres et miroirs sont conçues pour allier esthétique, durabilité et
           performance énergétique, garantissant ainsi votre confort et votre
           satisfaction.
         </p>
