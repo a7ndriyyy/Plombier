@@ -4,11 +4,11 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import ContactCTA from './components/ContactCTA';
-<<<<<<< Updated upstream
+
 import { Analytics } from "@vercel/analytics/react";
-=======
+
 import Partnership from './components/Partnership';
->>>>>>> Stashed changes
+
 
 
 function App() {
